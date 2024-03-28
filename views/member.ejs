@@ -1,0 +1,30 @@
+<h1>Member</h1>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>이름</th><th>나이</th><th>주소</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><%= context.arr[0]  %></td>
+            <td><%= context.arr[1]  %></td>
+            <td><%= context.arr[2]  %></td>
+        </tr>
+        <tr>
+            <td><%= context.obj.name  %></td>
+            <td><%= context.obj.age  %></td>
+            <td><%= context.obj.addr  %></td>
+        </tr>
+        <tr>
+            <td><%= context['name']  %></td>
+            <td><%= context.age  %></td>
+            <td><%= context['addr']  %></td>
+        </tr>
+    </tbody>
+</table>
+
+<%= Object.keys(context) %> //키값만 가져옴
+<%= Object.keys(context.obj) %> //obj의 키 값만 가져옴
+<%= Object.values(context) %> //밸류값만 가져옴

@@ -1,0 +1,22 @@
+<h1>Quiz url</h1>
+
+<!--
+<script>
+const link = Object.values(c.url)
+document.write(link);
+</script>
+<ul>
+    <li><a href = "link[0]">네이버</a> </li>
+</ul>
+<%= Object.keys(c.url) %>
+-->
+
+<ul>
+    <% for(let i=0 ; i < c.url.length ; i++){ 
+        let key = Object.keys( c.url[i] );
+        let value = Object.values( c.url[i] );
+    %>
+        <li> <a href="<%= value %>"><%= key %></a> </li>
+    <% } %>
+</ul>
+    

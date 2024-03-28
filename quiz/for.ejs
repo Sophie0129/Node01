@@ -1,0 +1,23 @@
+<h1>Quiz for</h1>
+<a href="url">url로 가기</a>
+
+<h2>단순 for문</h2>
+<% for(let i=0 ; i < c.rank.length ; i++){ %>
+    <%= c.rank[i] %><br>
+    <% } %>
+
+    <!-- <%= Object.keys(c) %>
+    <%= Object.values(c.rank[0]) %> -->
+
+    <h2>이중 for문</h2>
+
+    <table border="1">
+        <tbody>
+        <% for(let i=0 ; i < c.rank.length ; i++){ %>
+            <tr>
+            <% for(let k=0 ; k < 5 ; k++){ %>
+                <td><%= c.rank[i][k] %></td>
+            <% } %>
+            </tr>
+        <% } %>
+        </tbody>     
